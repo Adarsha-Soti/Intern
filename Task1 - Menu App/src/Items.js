@@ -19,7 +19,7 @@ const items = [
         name: "Canadian",
         category:"pizza",
         img: "https://di-cdn.sfo2.digitaloceanspaces.com/product_images/461/533_5f47f53af03ec6a265b433c16a4aa06a.jpg",
-        price: 400
+        price: 500
     },
     {
         id: 4,
