@@ -14,29 +14,7 @@ function Cart({items, remove}) {
     return (
         <div id="mySidenav" className="sidenav">
             <a href="#" className="closebtn" onClick={closeNav}>&times;</a>
-                    <Grid container>
-                    <Grid item xs={12} sm={12} md={6}>
-                        <h2 className='text'>Checkout</h2>
-                        <hr/>
-                        <Grid container>
-                            <Grid item xs={6}>
-                                        <p className=" text">Subtotal</p>
-                                        <p className=" text">Rs{totalPrice}</p>
-                            </Grid>
-                            <Grid item xs={6}>
-                                    <div className="text">
-                                        <p >Service Charge</p>
-                                        <p>Rs.{GST}</p>
-                                    </div>
-                            </Grid>
-                        </Grid>
-                        <hr/>
-                        <button className='btn primary-btn text' style={{fontSize:'20px',width:"70%",marginLeft:"100px"}}
-                                id="checkout" type="button">
-                                    Checkout :
-                                    <span className=" text">Rs{totalPrice + GST}</span>
-                        </button>
-                    </Grid>
+                <Grid container>
                     <Grid item  xs={12} sm={12} md={6}>
                     <h2 className='text'>Cart</h2>
                         <hr/>
@@ -67,8 +45,29 @@ function Cart({items, remove}) {
                             </table>
                         </div>
                     </Grid>
-                    
+                    <Grid item xs={12} sm={12} md={6}>
+                        <h2 className='text'>Checkout</h2>
+                        <hr/>
+                        <Grid container>
+                            <Grid item xs={6}>
+                                        <p className=" text">Subtotal</p>
+                                        <p className=" text">Rs{totalPrice}</p>
+                            </Grid>
+                            <Grid item xs={6}>
+                                    <div className="text">
+                                        <p >Service Charge</p>
+                                        <p>Rs.{GST}</p>
+                                    </div>
+                            </Grid>
+                        </Grid>
+                        <hr/>
+                        <button className='btn primary-btn text' style={{fontSize:'20px',width:"70%",marginLeft:"50px"}}
+                                id="checkout" type="button">
+                                    Checkout :
+                                    <span className=" text">Rs{totalPrice + GST}</span>
+                        </button>
                     </Grid>
+                 </Grid>
         </div>
     );
 }
