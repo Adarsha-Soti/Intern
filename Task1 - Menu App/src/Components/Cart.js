@@ -67,6 +67,7 @@ function Cart({items, remove}) {
                                     <span className=" text">Rs{totalPrice + GST}</span>
                         </button>
                     </Grid>
+                    
                  </Grid>
         </div>
     );
